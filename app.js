@@ -49,13 +49,9 @@
       fd.append("anticsrf", "true");
 
       var finish = function () {
-        showMsg(
-          "ok",
-          'Thanks! Check your inbox to confirm your subscription. ' +
-          '<a href="assets/calmoniq-2026-canadian-tax-limits.pdf" target="_blank" rel="noopener">Download the 2026 guide →</a>'
-        );
+        showMsg("ok", "Thanks! Check your inbox to confirm your subscription.");
         form.reset();
-        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = "Subscribe & get the free guide"; }
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = "Subscribe"; }
       };
       fetch(endpoint, { method: "POST", body: fd, mode: "no-cors" }).then(finish, finish);
     });

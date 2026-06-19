@@ -38,6 +38,9 @@ a { color: inherit; text-decoration: none; }
 .btn-ghost { background: transparent; color: var(--green-dark); border-color: var(--border); }
 .btn-ghost:hover { background: var(--bg-alt); }
 .btn-block { width: 100%; }
+/* Buy Me a Coffee — distinct brand yellow so it stands out in the nav */
+.btn-coffee { background: #ffdd00; color: #1f2d24; border-color: #ffdd00; font-weight: 700; }
+.btn-coffee:hover { background: #f5c518; border-color: #f5c518; }
 
 /* nav */
 .nav {
