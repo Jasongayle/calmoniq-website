@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your download is starting — Calmoniq</title>
+<meta name="description" content="Your Calmoniq download is starting. Here is how to open it the first time, plus optional Canadian tax-limit updates by email." />
+<meta name="robots" content="noindex, follow" />
+<meta name="theme-color" content="#4a7c59" />
+<link rel="canonical" href="https://calmoniq.com/thanks.html" />
+<link rel="icon" href="assets/icon.png" />
+<link rel="stylesheet" href="styles.css?v=8" />
+<script src="analytics.js?v=8"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><img src="assets/icon.png" alt="Calmoniq" width="32" height="32" /><span>Calmoniq</span></a>
+  <nav class="nav-links">
+    <a class="btn btn-sm btn-coffee" href="https://buymeacoffee.com/playmodeworkout" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+    <a class="btn btn-sm btn-ghost" href="index.html">Back to site</a>
+  </nav>
+</header>
+
+<main class="section thanks">
+  <div class="thanks-card">
+    <h1 class="thanks-title"><span class="thanks-check">✓</span> Your download is starting</h1>
+    <p class="thanks-meta"><span id="file-meta">Getting the latest version…</span>
+      <a id="download-again" href="#" hidden>Didn't start? Download again</a></p>
+    <p class="thanks-alt" id="alt-download" hidden><a id="alt-download-link" href="#"></a></p>
+
+    <hr class="thanks-rule" />
+
+    <div class="thanks-grid">
+      <div>
+        <h2 class="thanks-h2">First time opening it</h2>
+
+        <ol class="steps" id="steps-mac" hidden>
+          <li><span>1</span><p>Open the <strong>.dmg</strong> and drag Calmoniq into your <strong>Applications</strong> folder.</p></li>
+          <li><span>2</span><p>If macOS says it can't verify the app, click <strong>Done</strong>. (Do not click Move to Trash.)</p></li>
+          <li><span>3</span><p>Go to <strong>System Settings → Privacy &amp; Security</strong>, scroll down and click <strong>Open Anyway</strong>.</p></li>
+        </ol>
+
+        <ol class="steps" id="steps-windows" hidden>
+          <li><span>1</span><p>Run the <strong>.exe</strong> installer you just downloaded.</p></li>
+          <li><span>2</span><p>If Windows shows a blue "Windows protected your PC" box, click <strong>More info</strong>.</p></li>
+          <li><span>3</span><p>Then click <strong>Run anyway</strong> and follow the prompts.</p></li>
+        </ol>
+
+        <p class="thanks-note">Calmoniq isn't code-signed yet, so you see this once. It's a one-time step, not a problem with the app.</p>
+        <p class="thanks-note"><a id="other-os" href="thanks.html?os=windows">Using Windows instead?</a></p>
+      </div>
+
+      <div class="thanks-signup">
+        <h2 class="thanks-h2">While that finishes</h2>
+        <p class="thanks-signup-lede">Get the yearly TFSA, RRSP and FHSA limit updates, and be first to know when the Calmoniq <strong>mobile app</strong> lands.</p>
+        <form id="newsletter-form" class="newsletter-form" method="post"
+          data-ml-endpoint="https://assets.mailerlite.com/jsonp/2456457/forms/190665636648584324/subscribe">
+          <div class="thanks-row">
+            <input type="email" name="fields[email]" required placeholder="you@example.com" aria-label="Email address" />
+            <button class="btn" type="submit">Subscribe</button>
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span>Yes, email me Calmoniq news and Canadian personal-finance tips.</span>
+          </label>
+          <p class="form-msg" id="newsletter-msg" hidden></p>
+        </form>
+        <p class="thanks-fine">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+
+    <p class="thanks-back">
+      <a href="assets/calmoniq-2026-canadian-tax-limits.pdf" target="_blank" rel="noopener">Download the free 2026 Canadian tax &amp; contribution limits guide (PDF)</a>
+      &nbsp;·&nbsp; <a href="index.html">No thanks, take me back to the site</a>
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand"><img src="assets/icon.png" alt="" width="28" height="28" /><span>Calmoniq</span></div>
+  <nav class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="pro.html">For Business</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="mailto:support@calmoniq.com">Support</a>
+  </nav>
+  <p class="disclaimer">Calmoniq is a financial planning tool, not a financial advisor. © <span id="year"></span> Calmoniq.</p>
+</footer>
+
+<script src="app.js?v=8"></script>
+<script src="thanks.js?v=8"></script>
+</body>
+</html>

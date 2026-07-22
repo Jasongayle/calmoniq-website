@@ -12,13 +12,17 @@
   var isWindows = /Win/.test(plat) || /Windows/.test(ua);
   var isMac = /Mac/.test(plat) || /Mac OS X/.test(ua);
   if (btn) {
-    btn.href = RELEASES;
+    // Downloads go via thanks.html, which starts the right installer and shows
+    // the one-time "how to open it" steps (the app isn't code-signed yet).
+    btn.href = "thanks.html";
     if (isWindows) {
+      btn.href = "thanks.html?os=windows";
       btn.textContent = "Download free for Windows";
       if (note) note.textContent = "Free · Windows 11/10 (64-bit) · no account needed";
     } else if (isMac) {
+      btn.href = "thanks.html?os=mac";
       btn.textContent = "Download free for Mac";
-      if (note) note.textContent = "Free · choose Apple Silicon (M1–M4) or Intel on the next page · no account needed";
+      if (note) note.textContent = "Free · Apple Silicon or Intel · no account needed";
     }
   }
 
@@ -49,6 +53,7 @@
       fd.append("anticsrf", "true");
 
       var finish = function () {
+        if (window.cqTrack) window.cqTrack("newsletter-signup");
         showMsg("ok", "Thanks! Check your inbox to confirm your subscription.");
         form.reset();
         if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = "Subscribe"; }
