@@ -10,7 +10,7 @@
 // no personal data and needs no consent banner under GDPR/PIPEDA. It also
 // supports custom events, which we use to count downloads and signups.
 (function () {
-  var SITE_CODE = ""; // <-- put your GoatCounter code here
+  var SITE_CODE = "calmoniq"; // <-- put your GoatCounter code here
 
   // window.cqTrack("download-mac") records a named event. Safe to call before
   // (or without) analytics being configured - it just no-ops.
